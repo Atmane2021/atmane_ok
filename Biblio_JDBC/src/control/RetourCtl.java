@@ -24,7 +24,8 @@ public class RetourCtl {
 		String retourEx = JOptionPane.showInputDialog(null, "Entrez l'identifiant à restituer ( de 1 à 8 ): ","Retour d'emprunt", JOptionPane.INFORMATION_MESSAGE);
 		InterfaceEmpruntEnCoursDao eecd = new EmpruntEnCoursDao(pjdbc);
 		eecd.removeEmpruntEnCours(Integer.parseInt(retourEx));
-
+		System.out.println("\nL'exemplaire rendu  est : " + Integer.parseInt(retourEx) + "\n");
+		
 		InterfaceExemplaireDao eecd2 = new ExemplairesDao(pjdbc);
 		System.out.println("\nListe des exemplaires disponibles : \n");
 		for(Exemplaire ex1 : eecd2.findAll()) {
