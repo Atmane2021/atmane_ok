@@ -14,6 +14,7 @@ import domain.Utilisateur;
 public class TestDeBase {
 	
 	public static void main(String[] args) throws ParseException, BiblioException, SQLException {
+		System.out.println("ok");
 		PingJdbc pjdbc = new PingJdbc();
 		pjdbc.getConnection("Biblio_JDBC\\bibliothecaire.properties");
 		//pjdbc.getConnection("biblioFinale.properties");
