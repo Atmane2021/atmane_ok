@@ -15,7 +15,7 @@ public class TestDeBase {
 
 	public static void main(String[] args) throws ParseException, BiblioException, SQLException {
 		PingJdbc pjdbc = new PingJdbc();
-		pjdbc.getConnection("bibliothecaire.properties");
+		pjdbc.getConnection("Biblio_JDBC\\bibliothecaire.properties");
 		//pjdbc.getConnection("biblioFinale.properties");
 		System.out.println("Test de base : emprunt adhérent et employé");
 		UtilisateursDao udao = new UtilisateursDao(pjdbc);

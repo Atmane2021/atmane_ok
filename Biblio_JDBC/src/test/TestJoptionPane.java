@@ -23,7 +23,7 @@ public class TestJoptionPane {
 	public static void main(String[] args) throws SQLException, FileNotFoundException, IOException, NumberFormatException, BiblioException {
 		
 		PingJdbc pjdbc = new PingJdbc();
-		pjdbc.getConnection("bibliothecaire.properties");
+		pjdbc.getConnection("Biblio_JDBC\\bibliothecaire.properties");
 		Integer choixFinal;
 		do {
 		String[] choix = {"Consulter un livre", "Consulter un utilisateur", "Emprunter un livre", "Disponibilité d'un exemplaire","Rendre un livre", "Emprunts en cours","Emprunts Archivés"};
