@@ -21,7 +21,7 @@ import domain.Utilisateur;
 public class TestJoptionPane {
 	
 	public static void main(String[] args) throws SQLException, FileNotFoundException, IOException, NumberFormatException, BiblioException {
-		
+		System.out.println("bonjour");
 		PingJdbc pjdbc = new PingJdbc();
 		pjdbc.getConnection("Biblio_JDBC\\bibliothecaire.properties");
 		Integer choixFinal;

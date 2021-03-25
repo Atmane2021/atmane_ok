@@ -12,7 +12,7 @@ import domain.PingJdbc;
 import domain.Utilisateur;
 
 public class TestDeBase {
-
+	
 	public static void main(String[] args) throws ParseException, BiblioException, SQLException {
 		PingJdbc pjdbc = new PingJdbc();
 		pjdbc.getConnection("Biblio_JDBC\\bibliothecaire.properties");
@@ -32,7 +32,7 @@ public class TestDeBase {
 		Exemplaire ex2 = edao.findByKey(2);
 		System.out.println(" Exemplaire instancié via classe Dao " + ex2);
 		
-
+System.out.println("bonjour");
 	}
 
 }
